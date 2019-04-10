@@ -1,0 +1,24 @@
+#Crear repositorio
+git init --bare <nombre_repo>.git
+
+#Agregar archivos al repositorio
+git add <nombre de archivos>
+git commit -m "Mensaje identificativo del commit"
+git push origin master
+
+#Ver ruta del repositorio
+git remote -v
+
+#Cambiar la ruta del repositorio
+git remote set-url origin <ruta.git>
+
+#Ver historial de cambios
+git log
+
+#Cambiar un archivo a un estado anterior
+	#Si no se ha hecho un commit
+		git checkout -- <archivo>
+	#Si ya se hizo commit
+		git checkout <hash_commit> -- <archivo>
+
+
